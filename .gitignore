@@ -3,7 +3,8 @@
 /frontend/.next
 
 # dependencies
-/backend/src/.env
+
 
 # dependencies
 /backend/node_modules
+/backend/src/.env
