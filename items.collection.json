@@ -1,0 +1,144 @@
+{
+    "info": {
+        "_postman_id": "d9ad7432-6c81-46a8-bf0c-7499f0acb10b",
+        "name": "items",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET /",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /items",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/items",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "items"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /items/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/items/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "items",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /items",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n   \"name\":\"Cannibale\",\r\n   \"description\":\"Sauce barbecue, mozzarella, poulet rôti*, merguez*, haché au bœuf assaisonné*.\",\r\n   \"price\":\"12.9\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:5000/items",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "items"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /items/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n   \"name\":\"Cannibale\",\r\n   \"description\":\"Sauce barbecue, mozzarella, poulet rôti*, merguez*, haché au bœuf assaisonné*.\",\r\n   \"price\":\"12.9\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:5000/items/64707956c9da4fc552fe29a7",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "items",
+                        "64707956c9da4fc552fe29a7"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /items/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/items/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "items",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

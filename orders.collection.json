@@ -1,0 +1,144 @@
+{
+    "info": {
+        "_postman_id": "8306f9a9-f00a-46c5-95d5-bbcf6576d23a",
+        "name": "orders",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET /",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /orders",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/orders",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "orders"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /orders/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/orders/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "orders",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /orders",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "  {\r\n\t\"number\": \"1\",\r\n\t\"date\": \"2023-06-01T12:00:00.000Z\",\r\n\t\"status\": \"done\",\r\n\t\"client\": {\r\n\t\t\"id\": \"6475a1ef78ed30bf7dd6a606\",\r\n\t\t\"name\": \"DOE\",\r\n\t\t\"firstname\": \"John\"\r\n\t},\r\n\t\"items\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Bacon Groovy\",\r\n\t\t\t\"description\": \"Crème fraîche légère française, mozzarella, poulet rôti*, oignons, bacon, sauce barbecue.\",\r\n\t\t\t\"price\": 10.9,\r\n\t\t\t\"quantity\": 1\r\n\t\t}\r\n\t]\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:5000/orders",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "orders"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /orders/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n\t\"number\": \"1\",\r\n\t\"date\": \"2023-06-01T12:00:00.000Z\",\r\n\t\"status\": \"done\",\r\n\t\"client\": {\r\n\t\t\"id\": \"6475a1ef78ed30bf7dd6a606\",\r\n\t\t\"name\": \"DOE\",\r\n\t\t\"firstname\": \"John\"\r\n\t},\r\n\t\"items\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Bacon Groovy\",\r\n\t\t\t\"description\": \"Crème fraîche légère française, mozzarella, poulet rôti*, oignons, bacon, sauce barbecue.\",\r\n\t\t\t\"price\": 10.9,\r\n\t\t\t\"quantity\": 1\r\n\t\t}\r\n\t]\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:5000/orders/64707956c9da4fc552fe29a7",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "orders",
+                        "64707956c9da4fc552fe29a7"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /orders/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/orders/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "orders",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

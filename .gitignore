@@ -1,0 +1,6 @@
+# dependencies
+/frontend/node_modules
+/frontend/.next
+
+# dependencies
+/backend/node_modules
